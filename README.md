@@ -1,5 +1,5 @@
 # Teavagyapp
 ---
 
-This is a ridicolously overcomplicated app to display the \
+This is a ridiculously overcomplicated app to display the \
 **infamous** "TEVAGYA {something}" message.
