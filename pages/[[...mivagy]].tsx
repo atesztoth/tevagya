@@ -18,9 +18,9 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <div className={styles['mivagy-container']}>
-        <div className={styles['github-logo']}>
-          <Link href="https://github.com/atesztoth/tevagya">
-            <Image src={github} objectFit="cover" />
+        <div className={`${styles['github-logo']} ${styles['glowing-border']}`}>
+          <Link href="https://github.com/atesztoth/tevagya" passHref>
+            <Image src={github} objectFit="cover" alt="GitHub" />
           </Link>
         </div>
         <div className={styles['mivagy-inside-container']}>
@@ -29,7 +29,9 @@ export default function Home() {
             <>
               <h1>TEVAGYA</h1>
               <div style={{ position: 'relative' }}>
-                <div className={utilStyles.swing}>{mivagy}</div>
+                <div className={utilStyles.swing}>
+                  <span className={utilStyles['glowing-text']}>{mivagy}</span>
+                </div>
               </div>
             </>
           )}

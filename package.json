@@ -1,15 +1,14 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "tevagyapp",
+  "version": "0.9.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "next lint"
   },
   "dependencies": {
-    "@mojs/core": "^1.2.1",
     "date-fns": "^2.11.1",
     "gray-matter": "^4.0.2",
     "next": "^11.0.0",
@@ -23,7 +22,8 @@
     "@types/react": "^17.0.14",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
-    "eslint": "^8.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "^12.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",

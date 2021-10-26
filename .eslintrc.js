@@ -1,6 +1,11 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['plugin:@typescript-eslint/recommended', 'prettier', 'plugin:prettier/recommended'],
+  extends: [
+    'next',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'plugin:prettier/recommended',
+  ],
   rules: {
     'prettier/prettier': 'error',
     'function-paren-newline': 0,
@@ -16,4 +21,5 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
+  settings: { next: { rootDir: '.' } },
 };
