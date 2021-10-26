@@ -14,3 +14,12 @@
     transform: translateX(-50%) translateY(-50%);
     width: auto;
 }
+
+.github-logo {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+}
