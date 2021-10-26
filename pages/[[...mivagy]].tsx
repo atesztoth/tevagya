@@ -14,12 +14,13 @@ export default function Home() {
       <Head>
         <title>{ siteTitle }</title>
       </Head>
-      { !mivagy && <h1>Szia :)</h1> }
-      <div className={ styles.mivagyContainer }>
-        <div>
+      <div className={ styles['mivagy-container'] }>
+        <div className={ styles['mivagy-inside-container'] }>
+          { !mivagy && <h1>Szia :)</h1> }
+
           { mivagy && <>
             <h1>TEVAGYA</h1>
-            <span className={ utilStyles.swing }>{ mivagy }</span>
+            <div className={ utilStyles.swing }>{ mivagy }</div>
           </> }
         </div>
       </div>
