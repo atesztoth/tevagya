@@ -4,6 +4,8 @@
 This is a ridiculously overcomplicated app to display the \
 **infamous** "TEVAGYA {something}" message.
 
+## Deployed version
+Deployed version is available under this url: https://tevagyapp.herokuapp.com/visitor
 
 ## For the most generous of the noble visitors
 
