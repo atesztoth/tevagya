@@ -53,26 +53,30 @@
 
 @keyframes swing {
     0% {
-        /*transform: scale(1) translateX(-50%) translateY(-50%);*/
-        font-size: 1em;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        /*font-size: 1em;*/
     }
-    50% {
-        /*transform: scale(4) translateX(-10%) translateY(-10%);*/
-        margin-top: -50%;
-        font-size: 15em;
+    40% {
+        transform: translateX(-50%) translateY(-50%) scale(10);
+        /*font-size: 15em;*/
+    }
+    60% {
+        transform: translateX(-50%) translateY(-50%) scale(10);
+        /*font-size: 15em;*/
     }
     100% {
-        /*transform: scale(1) translateX(-50%) translateY(-50%);*/
-        font-size: 1em;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        /*font-size: 1em;*/
     }
 }
 
 
 .swing {
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    transform-origin: bottom;
     text-align: center;
     animation: swing 1s ease;
     animation-iteration-count: infinite;
@@ -89,9 +93,9 @@
 
 @-webkit-keyframes glow {
     from {
-        text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px violet, 0 0 40px violet, 0 0 50px violet, 0 0 60px violet, 0 0 70px violet;
+        text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px violet, 0 0 5px violet, 0 0 5px violet, 0 0 5px violet, 0 0 5px violet;
     }
     to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        text-shadow: 0 0 5px #fff, 0 0 5px #ff4da6, 0 0 5px #ff4da6, 0 0 5px #ff4da6, 0 0 5px #ff4da6, 0 0 5px #ff4da6, 0 0 5px #ff4da6;
     }
 }
