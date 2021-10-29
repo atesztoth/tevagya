@@ -1,16 +1,15 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import Layout, { siteTitle } from '../components/layout';
+import Layout, { siteTitle } from '../../components/layout';
 import { useRouter } from 'next/router';
-// import utilStyles from '../styles/utils.module.css';
 
-import styles from '../styles/mivagy.module.css';
-import github from '../assets/GitHub-WHITE.svg';
+import styles from '../../styles/mivagy.module.css';
+import github from '../../assets/GitHub-WHITE.svg';
 
 export default function Home() {
   const router = useRouter();
-  const [mivagy] = router.query.mivagy ?? [];
+  const name = router.query.name;
 
   return (
     <Layout home>
@@ -26,12 +25,12 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles['mivagy-inside-container']}>
-          {!mivagy && <h1>Szia :)</h1>}
-          {mivagy && (
+          {!name && <h1>Ma jöttél le a falvédőről!</h1>}
+          {name && (
             <>
-              <h1>TEVAGYA</h1>
+              <h1 style={{ textTransform: 'uppercase' }}>Nem ma jöttél le a falvédőről,</h1>
               <div style={{ textTransform: 'uppercase', fontSize: '4em', textAlign: 'center' }}>
-                {mivagy}
+                {name}
               </div>
             </>
           )}
