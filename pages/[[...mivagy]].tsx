@@ -26,7 +26,7 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles['mivagy-inside-container']}>
-          {!mivagy && <h1>Szia :)</h1>}
+          {!mivagy && <h1>Nem tevagya.</h1>}
           {mivagy && (
             <>
               <h1 style={{ textTransform: 'uppercase', textAlign: 'center' }}>TEVAGYA</h1>
