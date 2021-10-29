@@ -28,7 +28,9 @@ export default function Home() {
           {!name && <h1>Ma jöttél le a falvédőről!</h1>}
           {name && (
             <>
-              <h1 style={{ textTransform: 'uppercase' }}>Nem ma jöttél le a falvédőről,</h1>
+              <h1 style={{ textTransform: 'uppercase', textAlign: 'center' }}>
+                Nem ma jöttél le a falvédőről,
+              </h1>
               <div style={{ textTransform: 'uppercase', fontSize: '4em', textAlign: 'center' }}>
                 {name}
               </div>

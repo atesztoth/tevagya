@@ -29,7 +29,7 @@ export default function Home() {
           {!mivagy && <h1>Szia :)</h1>}
           {mivagy && (
             <>
-              <h1>TEVAGYA</h1>
+              <h1 style={{ textTransform: 'uppercase', textAlign: 'center' }}>TEVAGYA</h1>
               <div style={{ textTransform: 'uppercase', fontSize: '4em', textAlign: 'center' }}>
                 {mivagy}
               </div>
